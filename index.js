@@ -179,28 +179,49 @@ else {
 }
 
 //medium task1
-let weight = prompt("Введите вес товара в кг:");
-const country = prompt("Введите страну доставки:");
+let weight = 1;
+const country = 3;
+
 if (weight <= 1) {
     alert("10dollars")
 }
 else if (weight > 1 && weight <= 5 && country == USA) {
     alert("20dollars")
 }
-else if(weight > 1 && weight <= 5 && country == other) {
+else if(weight > 1 && weight <= 5 && country  ) {
     alert("30dollars")
 }
-else if(weight > 5 && country == other) {
+else {
     alert("50dollars")
 }
 
 //meedium3
-let triangle = prompt("a")
-let triangle2 = prompt("b")
-let triangle3 = prompt("c")
+/*let a = 1
+let b = 2
+let c = 3
 if (a + b > c && a + c > b && b + c > a) {
     console.log("может существовать")
 }
 else {
     console.log("не может существовать")
+}*/
+
+//medium4
+let a = 3;
+let b = 4;
+let c = 5;
+
+if ((a + b > c) && (a + c > b) && (b + c > a)) {
+if (a === b && b === c) {
+console.log("Равносторонний треугольник");
+}
+else if (a === b || a === c || b === c) {
+console.log("Равнобедренный треугольник");
+}
+else {
+console.log("Разносторонний треугольник");
+}
+}
+else {
+console.log("Несуществующий треугольник");
 }
